@@ -1,0 +1,48 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body{
+overflow: hidden;
+font-family: 'Questrial', sans-serif;
+}
+
+.animation{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	white-space: nowrap;
+	background-color: black;
+	color: white;
+	overflow: hidden;
+	justify-content: center;
+	z-index: 100;
+	width: 100%;
+}
+
+.animate{
+	font-size: 100px;
+	text-transform: uppercase;
+	color: #e0e0e0;
+	animation: animate 10s linear infinite;
+}
+.animate span{
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 1px #39ff14;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+@keyframes animate{
+	0%{
+		transform: translateX(-100%);
+	}
+	100%{
+		transform: translateX(100%);
+	}
+}
